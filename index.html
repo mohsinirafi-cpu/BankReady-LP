@@ -188,9 +188,6 @@
       <div class="cl u1 s10"></div>
       <div class="cl u2 s11"></div>
   </div>
-  <div id="kjwrap" style="position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden" aria-hidden="true">
-    <script src="https://academy.raficredit.ca/forms/2149650394/embed.js"></script>
-  </div>
   <div class="wrap">
     <main class="phone" aria-label="Rafi Credit — Bank Ready: The Debt Freedom Masterclass. Coming soon.">
       <span class="lbtn"></span><span class="rbtn"></span><span class="notch" aria-hidden="true"></span>
@@ -227,10 +224,13 @@
       </div>
     </main>
   </div>
+  <div id="kjwrap" style="position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+    <script src="https://academy.raficredit.ca/forms/2149650394/embed.js"></script>
+  </div>
 <script>
   (function(){
     var cta=document.querySelector('.cta'),join=document.querySelector('.join');
-    var fname=document.querySelector('.fname'),email=document.querySelector('input[type=email]');
+    var fname=cta.querySelector('.fname'),email=cta.querySelector('input[type=email]');
     function bad(el){el.focus();el.style.boxShadow='0 8px 22px rgba(160,20,40,.25), inset 0 0 0 2px #d23b53';}
     function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
     cta.addEventListener('submit',function(e){
